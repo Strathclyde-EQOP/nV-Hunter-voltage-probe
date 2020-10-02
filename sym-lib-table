@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ADA4523-1)(type Legacy)(uri ${KIPRJMOD}/comp_lib/ADA4523-1.lib)(options "")(descr ""))
+  (lib (name SMBJ15A)(type Legacy)(uri ${KIPRJMOD}/comp_lib/SMBJ15A.lib)(options "")(descr ""))
 )
