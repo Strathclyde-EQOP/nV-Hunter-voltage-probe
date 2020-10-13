@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Title "\"nV-Hunter\" Voltage Probe - 10000||1000 gain"
+Date "2020-10-13"
+Rev "1.0A"
+Comp "Strathclyde University"
+Comment1 "Designed by: Marcin Mrozowski"
+Comment2 "Checked by: Iain Chalmers"
+Comment3 "Approved by:"
 Comment4 ""
 $EndDescr
 $Comp
@@ -409,7 +409,7 @@ L Connector:Conn_Coaxial J1
 U 1 1 5F77D281
 P 1400 4050
 F 0 "J1" H 1328 4288 50  0000 C CNN
-F 1 "Conn_Coaxial" H 1328 4197 50  0000 C CNN
+F 1 "BNC" H 1328 4197 50  0000 C CNN
 F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 1400 4050 50  0001 C CNN
 F 3 " ~" H 1400 4050 50  0001 C CNN
 	1    1400 4050
@@ -524,7 +524,7 @@ L Device:R_Small R17
 U 1 1 5F7A3537
 P 7200 4050
 F 0 "R17" V 7004 4050 50  0000 C CNN
-F 1 "61.5k" V 7095 4050 50  0000 C CNN
+F 1 "61.9k" V 7095 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 4050 50  0001 C CNN
 F 3 "~" H 7200 4050 50  0001 C CNN
 	1    7200 4050
@@ -882,29 +882,27 @@ Connection ~ 9300 4150
 $Comp
 L Connector:Conn_Coaxial J2
 U 1 1 5F782727
-P 9950 4150
-F 0 "J2" H 9878 4388 50  0000 C CNN
-F 1 "Conn_Coaxial" H 9878 4297 50  0000 C CNN
-F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 9950 4150 50  0001 C CNN
-F 3 " ~" H 9950 4150 50  0001 C CNN
-	1    9950 4150
+P 10200 4150
+F 0 "J2" H 10128 4388 50  0000 C CNN
+F 1 "BNC" H 10128 4297 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 10200 4150 50  0001 C CNN
+F 3 " ~" H 10200 4150 50  0001 C CNN
+	1    10200 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 4150 9550 4150
 $Comp
 L power:GNDA #PWR0120
 U 1 1 5F78272E
-P 9950 4650
-F 0 "#PWR0120" H 9950 4400 50  0001 C CNN
-F 1 "GNDA" H 9955 4477 50  0000 C CNN
-F 2 "" H 9950 4650 50  0001 C CNN
-F 3 "" H 9950 4650 50  0001 C CNN
-	1    9950 4650
+P 10200 4650
+F 0 "#PWR0120" H 10200 4400 50  0001 C CNN
+F 1 "GNDA" H 10205 4477 50  0000 C CNN
+F 2 "" H 10200 4650 50  0001 C CNN
+F 3 "" H 10200 4650 50  0001 C CNN
+	1    10200 4650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	9950 4350 9950 4650
+	10200 4350 10200 4650
 Wire Wire Line
 	9550 4500 9550 4650
 Wire Wire Line
@@ -1187,48 +1185,45 @@ Connection ~ 6100 6850
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 5F856F48
-P 5900 1300
-F 0 "BT1" H 6018 1396 50  0000 L CNN
-F 1 "9V" H 6018 1305 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Eagle_12BH611-GR" V 5900 1360 50  0001 C CNN
-F 3 "~" V 5900 1360 50  0001 C CNN
-	1    5900 1300
+P 6500 1200
+F 0 "BT1" H 6618 1296 50  0000 L CNN
+F 1 "9V" H 6618 1205 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Eagle_12BH611-GR" V 6500 1260 50  0001 C CNN
+F 3 "~" V 6500 1260 50  0001 C CNN
+	1    6500 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Battery_Cell BT2
 U 1 1 5F85EE6F
-P 5900 1600
-F 0 "BT2" H 6018 1696 50  0000 L CNN
-F 1 "9V" H 6018 1605 50  0000 L CNN
-F 2 "Battery:BatteryHolder_Eagle_12BH611-GR" V 5900 1660 50  0001 C CNN
-F 3 "~" V 5900 1660 50  0001 C CNN
-	1    5900 1600
+P 6500 1600
+F 0 "BT2" H 6618 1696 50  0000 L CNN
+F 1 "9V" H 6618 1605 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Eagle_12BH611-GR" V 6500 1660 50  0001 C CNN
+F 3 "~" V 6500 1660 50  0001 C CNN
+	1    6500 1600
 	1    0    0    -1  
 $EndComp
-Connection ~ 5900 1400
 $Comp
 L power:GNDA #PWR05
 U 1 1 5F882A1C
-P 5550 1400
-F 0 "#PWR05" H 5550 1150 50  0001 C CNN
-F 1 "GNDA" H 5555 1227 50  0000 C CNN
-F 2 "" H 5550 1400 50  0001 C CNN
-F 3 "" H 5550 1400 50  0001 C CNN
-	1    5550 1400
+P 6150 1400
+F 0 "#PWR05" H 6150 1150 50  0001 C CNN
+F 1 "GNDA" H 6155 1227 50  0000 C CNN
+F 2 "" H 6150 1400 50  0001 C CNN
+F 3 "" H 6150 1400 50  0001 C CNN
+	1    6150 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5900 1400 5550 1400
 $Comp
 L power:+9V #PWR06
 U 1 1 5F88ECB0
-P 8800 850
-F 0 "#PWR06" H 8800 700 50  0001 C CNN
-F 1 "+9V" H 8815 1023 50  0000 C CNN
-F 2 "" H 8800 850 50  0001 C CNN
-F 3 "" H 8800 850 50  0001 C CNN
-	1    8800 850 
+P 8800 800
+F 0 "#PWR06" H 8800 650 50  0001 C CNN
+F 1 "+9V" H 8815 973 50  0000 C CNN
+F 2 "" H 8800 800 50  0001 C CNN
+F 3 "" H 8800 800 50  0001 C CNN
+	1    8800 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1256,88 +1251,56 @@ $EndComp
 $Comp
 L Switch:SW_DPDT_x2 SW1
 U 2 1 5F8AF740
-P 8500 1550
-F 0 "SW1" H 8500 1835 50  0000 C CNN
-F 1 "SW_DPDT_x2" H 8500 1744 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 8500 1550 50  0001 C CNN
-F 3 "~" H 8500 1550 50  0001 C CNN
-	2    8500 1550
+P 8500 1650
+F 0 "SW1" H 8500 1935 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 8500 1844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011AQN_DPDT_Angled" H 8500 1650 50  0001 C CNN
+F 3 "~" H 8500 1650 50  0001 C CNN
+	2    8500 1650
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+BATT #PWR08
 U 1 1 5F8BE505
-P 5900 1000
-F 0 "#PWR08" H 5900 850 50  0001 C CNN
-F 1 "+BATT" H 5915 1173 50  0000 C CNN
-F 2 "" H 5900 1000 50  0001 C CNN
-F 3 "" H 5900 1000 50  0001 C CNN
-	1    5900 1000
+P 6500 800
+F 0 "#PWR08" H 6500 650 50  0001 C CNN
+F 1 "+BATT" H 6515 973 50  0000 C CNN
+F 2 "" H 6500 800 50  0001 C CNN
+F 3 "" H 6500 800 50  0001 C CNN
+	1    6500 800 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:-BATT #PWR09
 U 1 1 5F8BF05F
-P 5900 1800
-F 0 "#PWR09" H 5900 1650 50  0001 C CNN
-F 1 "-BATT" H 5915 1973 50  0000 C CNN
-F 2 "" H 5900 1800 50  0001 C CNN
-F 3 "" H 5900 1800 50  0001 C CNN
-	1    5900 1800
+P 6500 1900
+F 0 "#PWR09" H 6500 1750 50  0001 C CNN
+F 1 "-BATT" H 6515 2073 50  0000 C CNN
+F 2 "" H 6500 1900 50  0001 C CNN
+F 3 "" H 6500 1900 50  0001 C CNN
+	1    6500 1900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5900 1100 5900 1000
-Wire Wire Line
-	5900 1800 5900 1750
+	6500 1900 6500 1750
 Connection ~ 8850 4500
 Connection ~ 9300 4500
 Connection ~ 9550 4150
-$Comp
-L power:+BATT #PWR010
-U 1 1 5F9908C1
-P 8200 850
-F 0 "#PWR010" H 8200 700 50  0001 C CNN
-F 1 "+BATT" H 8215 1023 50  0000 C CNN
-F 2 "" H 8200 850 50  0001 C CNN
-F 3 "" H 8200 850 50  0001 C CNN
-	1    8200 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-BATT #PWR011
-U 1 1 5F9974B4
-P 8200 1800
-F 0 "#PWR011" H 8200 1650 50  0001 C CNN
-F 1 "-BATT" H 8215 1973 50  0000 C CNN
-F 2 "" H 8200 1800 50  0001 C CNN
-F 3 "" H 8200 1800 50  0001 C CNN
-	1    8200 1800
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	8200 850  8200 950 
-Wire Wire Line
-	8200 950  8300 950 
-Wire Wire Line
-	8300 1450 8200 1450
-Wire Wire Line
-	8800 850  8800 1050
+	8800 800  8800 1050
 $Comp
 L Device:LED_Small D1
 U 1 1 5FA13EAD
 P 9500 1150
 F 0 "D1" V 9546 1082 50  0000 R CNN
 F 1 "P_ON_LED" V 9455 1082 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm" V 9500 1150 50  0001 C CNN
+F 2 "footprint_lib:LTST-S110TGKT_3016(1206)_LED_SideView" V 9500 1150 50  0001 C CNN
 F 3 "~" V 9500 1150 50  0001 C CNN
 	1    9500 1150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	8800 1050 8700 1050
-Wire Wire Line
-	8200 1450 8200 1800
 $Comp
 L power:+9V #PWR012
 U 1 1 5FA32CF7
@@ -1356,7 +1319,7 @@ L Device:R_Small R19
 U 1 1 5FAB2AF4
 P 9500 1450
 F 0 "R19" H 9441 1404 50  0000 R CNN
-F 1 "100k" H 9441 1495 50  0000 R CNN
+F 1 "10k" H 9441 1495 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9500 1450 50  0001 C CNN
 F 3 "~" H 9500 1450 50  0001 C CNN
 	1    9500 1450
@@ -1374,6 +1337,9 @@ F 0 "J4" H 1880 889 50  0000 L CNN
 F 1 "RF_Shield_One_Piece" H 1880 798 50  0000 L CNN
 F 2 "RF_Shielding:Laird_Technologies_BMI-S-210-F_44.00x30.50mm" H 1250 800 50  0001 C CNN
 F 3 "~" H 1250 800 50  0001 C CNN
+F 4 "Digi-key || Mouser" H 1250 900 50  0001 C CNN "Supplier"
+F 5 "BMI-S-210-F is just the base that you solder to the board. BMI-S-210-C also needs to be ordered which is the cover" H 1250 900 50  0001 C CNN "Note"
+F 6 "https://www.digikey.co.uk/product-detail/en/laird-technologies-emi/BMI-S-210-F/903-1057-1-ND/2182411" H 1250 900 50  0001 C CNN "Supplier link"
 	1    1250 900 
 	1    0    0    -1  
 $EndComp
@@ -1391,102 +1357,55 @@ $EndComp
 $Comp
 L power:-9V #PWR0122
 U 1 1 5FBC686E
-P 8800 1800
-F 0 "#PWR0122" H 8800 1675 50  0001 C CNN
-F 1 "-9V" H 8815 1973 50  0000 C CNN
-F 2 "" H 8800 1800 50  0001 C CNN
-F 3 "" H 8800 1800 50  0001 C CNN
-	1    8800 1800
+P 8800 1900
+F 0 "#PWR0122" H 8800 1775 50  0001 C CNN
+F 1 "-9V" H 8815 2073 50  0000 C CNN
+F 2 "" H 8800 1900 50  0001 C CNN
+F 3 "" H 8800 1900 50  0001 C CNN
+	1    8800 1900
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8800 1550 8700 1550
+	8800 1650 8700 1650
 Wire Wire Line
-	8800 1550 8800 1800
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 5F7BC773
-P 6400 1100
-F 0 "F1" V 6287 1100 50  0000 C CNN
-F 1 "130mA 60V" V 6286 1100 50  0001 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric" H 6450 900 50  0001 L CNN
-F 3 "~" H 6400 1100 50  0001 C CNN
-	1    6400 1100
-	0    1    1    0   
-$EndComp
+	8800 1650 8800 1900
 $Comp
 L Device:Polyfuse_Small F2
 U 1 1 5F7EC129
-P 6400 1500
-F 0 "F2" V 6287 1500 50  0000 C CNN
-F 1 "130mA 60V" V 6286 1500 50  0001 C CNN
-F 2 "Fuse:Fuse_1812_4532Metric" H 6450 1300 50  0001 L CNN
-F 3 "~" H 6400 1500 50  0001 C CNN
-	1    6400 1500
+P 7000 1750
+F 0 "F2" V 6887 1750 50  0000 C CNN
+F 1 "130mA 60V" V 6886 1750 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 7050 1550 50  0001 L CNN
+F 3 "~" H 7000 1750 50  0001 C CNN
+	1    7000 1750
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6300 1100 5900 1100
-Connection ~ 5900 1100
-$Comp
-L power:GNDA #PWR0123
-U 1 1 5F80A4B6
-P 7050 1800
-F 0 "#PWR0123" H 7050 1550 50  0001 C CNN
-F 1 "GNDA" H 7055 1627 50  0000 C CNN
-F 2 "" H 7050 1800 50  0001 C CNN
-F 3 "" H 7050 1800 50  0001 C CNN
-	1    7050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR0124
-U 1 1 5F8481DD
-P 6850 1800
-F 0 "#PWR0124" H 6850 1550 50  0001 C CNN
-F 1 "GNDA" H 6855 1627 50  0000 C CNN
-F 2 "" H 6850 1800 50  0001 C CNN
-F 3 "" H 6850 1800 50  0001 C CNN
-	1    6850 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 1500 7050 1100
-Wire Wire Line
-	6500 1100 7050 1100
-Wire Wire Line
-	6850 1500 6500 1500
-Wire Wire Line
-	6300 1500 6300 1750
-Wire Wire Line
-	6300 1750 5900 1750
-Connection ~ 5900 1750
-Wire Wire Line
-	5900 1750 5900 1700
+	6900 1750 6500 1750
 $Comp
 L SMBJ15A:SMBJ15A D3
 U 1 1 5F8D766C
-P 7050 1650
-F 0 "D3" V 7004 1738 50  0000 L CNN
-F 1 "SMBJ15A" V 7095 1738 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 7050 1700 50  0001 C CNN
-F 3 "" H 7050 1700 50  0001 C CNN
-	1    7050 1650
+P 7400 1150
+F 0 "D3" V 7354 1238 50  0000 L CNN
+F 1 "SMBJ15A" V 7445 1238 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 7400 1200 50  0001 C CNN
+F 3 "" H 7400 1200 50  0001 C CNN
+	1    7400 1150
 	0    1    1    0   
 $EndComp
 $Comp
 L SMBJ15A:SMBJ15A D2
 U 1 1 5F8E034B
-P 6850 1650
-F 0 "D2" V 6804 1738 50  0000 L CNN
-F 1 "SMBJ15A" V 6895 1738 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 6850 1700 50  0001 C CNN
-F 3 "" H 6850 1700 50  0001 C CNN
-	1    6850 1650
-	0    -1   -1   0   
+P 7400 1550
+F 0 "D2" V 7354 1638 50  0000 L CNN
+F 1 "SMBJ15A" V 7445 1638 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 7400 1600 50  0001 C CNN
+F 3 "" H 7400 1600 50  0001 C CNN
+	1    7400 1550
+	0    1    1    0   
 $EndComp
-Text Notes 1600 3750 0    50   ~ 0
- !Conditioned capacitor!\n<20nA leakage
+Text Notes 1100 3700 0    50   ~ 0
+ !Conditioned capacitor!\n<20nA leakage\n!Observe polarity of the input signal!
 Wire Notes Line
 	1700 3750 2450 3750
 Wire Notes Line
@@ -1546,7 +1465,7 @@ Wire Notes Line
 Wire Notes Line
 	4550 7600 4550 5400
 Text Notes 7100 6400 0    50   ~ 0
-Decoupling capacitors\nX7R 50V
+Decoupling capacitors\nfor pre-amp and filter\nX7R 50V
 Wire Notes Line
 	9850 3850 9850 5000
 Wire Notes Line
@@ -1555,8 +1474,8 @@ Wire Notes Line
 	8750 5000 8750 3850
 Wire Notes Line
 	8750 3850 9850 3850
-Text Notes 8800 5150 0    50   ~ 0
-Supporting 0.1 Hz Passive HPF
+Text Notes 8800 5350 0    50   ~ 0
+Supporting 0.1 Hz Passive HPF\nDoes not have to be in a shield\nas there is no more gain in the system.\nEnables ease of changing components
 Text Notes 10100 1350 0    50   ~ 0
 High efficiency PWR ON LED
 Wire Notes Line
@@ -1567,16 +1486,95 @@ Wire Notes Line
 	10050 2000 9350 2000
 Wire Notes Line
 	9350 2000 9350 650 
-Text Notes 950  1700 0    50   ~ 0
-RFI/EMI Shielding\nBMI-S-210F
-Wire Notes Line
-	5400 750  7600 750 
-Wire Notes Line
-	7600 750  7600 2100
-Wire Notes Line
-	7600 2100 5400 2100
-Wire Notes Line
-	5400 2100 5400 750 
-Text Notes 5750 2250 0    50   ~ 0
+Text Notes 750  2050 0    50   ~ 0
+RFI/EMI Shielding\nBMI-S-210-F + S-210-C\n\nPre-amplifier and filter are\ncontained within the shield\nand components marked with
+Text Notes 6800 2350 0    50   ~ 0
 Battery overvoltage and polarity protection
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 5F870BBF
+P 7000 950
+F 0 "F1" V 6887 950 50  0000 C CNN
+F 1 "130mA 60V" V 6886 950 50  0001 C CNN
+F 2 "Fuse:Fuse_1812_4532Metric" H 7050 750 50  0001 L CNN
+F 3 "~" H 7000 950 50  0001 C CNN
+	1    7000 950 
+	0    1    1    0   
+$EndComp
+Connection ~ 6500 1750
+Wire Wire Line
+	6500 1700 6500 1750
+Wire Wire Line
+	7100 1750 7400 1750
+Wire Wire Line
+	7400 1700 7400 1750
+Wire Wire Line
+	6900 950  6500 950 
+Wire Wire Line
+	6500 950  6500 1000
+Wire Wire Line
+	6500 800  6500 950 
+Connection ~ 6500 950 
+Wire Wire Line
+	8300 950  7400 950 
+Wire Wire Line
+	6500 1350 6150 1350
+Wire Wire Line
+	6150 1350 6150 1400
+Wire Wire Line
+	8300 1750 7400 1750
+Connection ~ 7400 1750
+NoConn ~ 8300 1150
+NoConn ~ 8300 1550
+Wire Wire Line
+	7400 1000 7400 950 
+Connection ~ 7400 950 
+Wire Wire Line
+	7400 950  7100 950 
+Wire Wire Line
+	6500 1300 6500 1350
+Connection ~ 6500 1350
+Wire Wire Line
+	6500 1350 6500 1400
+Wire Wire Line
+	6500 1350 7400 1350
+Wire Wire Line
+	7400 1350 7400 1300
+Wire Wire Line
+	7400 1400 7400 1350
+Connection ~ 7400 1350
+Wire Notes Line
+	9000 2200 9000 550 
+Wire Notes Line
+	9000 550  6000 550 
+Wire Notes Line
+	6000 550  6000 2200
+Wire Notes Line
+	6000 2200 9000 2200
+Wire Notes Line
+	8550 3150 8550 3300
+Wire Notes Line
+	8550 3300 8700 3300
+Wire Notes Line
+	4300 1200 4300 1350
+Wire Notes Line
+	4300 1350 4450 1350
+Text Notes 4300 1350 0    118  ~ 0
+S
+Text Notes 8550 3300 0    118  ~ 0
+S
+Wire Notes Line
+	6700 5400 6700 5550
+Wire Notes Line
+	6700 5550 6850 5550
+Text Notes 6700 5550 0    118  ~ 0
+S
+Wire Notes Line
+	1200 2150 1200 2300
+Wire Notes Line
+	1200 2300 1350 2300
+Text Notes 1200 2300 0    118  ~ 0
+S
+Wire Wire Line
+	9550 4150 10000 4150
 $EndSCHEMATC
