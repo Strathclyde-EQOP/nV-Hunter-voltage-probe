@@ -1475,7 +1475,7 @@ Wire Notes Line
 Wire Notes Line
 	8750 3850 9850 3850
 Text Notes 8800 5350 0    50   ~ 0
-Supporting 0.1 Hz Passive HPF\nDoes not have to be in a shield\nas there is no more gain in the system.\nEnables ease of changing components
+Supporting 0.1 Hz Passive HPF\nDoes not have to be in a shield\nas there is no more gain in the system.\nHowever there is enough space to place it in
 Text Notes 10100 1350 0    50   ~ 0
 High efficiency PWR ON LED
 Wire Notes Line
