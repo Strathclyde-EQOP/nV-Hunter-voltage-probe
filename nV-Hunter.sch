@@ -1845,11 +1845,6 @@ $EndComp
 NoConn ~ 1850 4950
 Wire Wire Line
 	2350 4650 2350 5200
-Wire Wire Line
-	850  4550 1550 4550
-Wire Wire Line
-	2350 4650 2750 4650
-Connection ~ 2350 4650
 Wire Notes Line
 	2600 5850 900  5850
 Wire Notes Line
@@ -1982,4 +1977,46 @@ F 3 "" H 5550 6900 50  0001 C CNN
 	1    5550 6900
 	1    0    0    -1  
 $EndComp
+Connection ~ 2350 4650
+Wire Wire Line
+	850  4550 1150 4550
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5FB5EC00
+P 1800 4050
+F 0 "JP1" H 1800 4163 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1800 4164 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1800 4050 50  0001 C CNN
+F 3 "~" H 1800 4050 50  0001 C CNN
+	1    1800 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4650 2550 4650
+Wire Wire Line
+	1950 4050 2550 4050
+Wire Wire Line
+	2550 4050 2550 4650
+Connection ~ 2550 4650
+Wire Wire Line
+	2550 4650 2750 4650
+Wire Wire Line
+	1650 4050 1150 4050
+Wire Wire Line
+	1150 4050 1150 4550
+Connection ~ 1150 4550
+Wire Wire Line
+	1150 4550 1550 4550
+Text Notes 1850 3400 2    50   ~ 0
+Solder jumper for amplifier bypass\nIf amplifier is not populated
+Wire Notes Line
+	1850 3400 1850 3900
+Wire Notes Line
+	1950 3900 1950 4150
+Wire Notes Line
+	1950 4150 1650 4150
+Wire Notes Line
+	1650 4150 1650 3900
+Wire Notes Line
+	1650 3900 1950 3900
 $EndSCHEMATC
