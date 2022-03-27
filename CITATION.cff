@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this hardware, please cite it as below."
+authors:
+  - family-names: Mrozowski
+    given-names: Marcin, Szymon
+    orcid: https://orcid.org/0000-0003-4925-7248
+title: "High gain pre-amplifier resources"
+version: 1.0A
+doi: 10.5281/zenodo.1234
+date-released: 2020-10-15
